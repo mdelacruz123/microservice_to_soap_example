@@ -30,6 +30,11 @@
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-webflux</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
 
@@ -57,6 +62,7 @@
 			<artifactId>jaxb-runtime</artifactId>
 			<version>2.3.1</version>
 		</dependency>
+
 	</dependencies>
 
 	<build>
@@ -71,20 +77,37 @@
 				<version>0.14.0</version>
 				<executions>
 					<execution>
+						<id>schema-gq091001-generate</id>
 						<goals>
 							<goal>generate</goal>
 						</goals>
+						<configuration>
+							<schemaLanguage>WSDL</schemaLanguage>
+							<schemas>
+								<schema>
+									<url>http://localhost:8082/mockGQ091001HTTPSoapBinding?wsdl</url>
+								</schema>
+							</schemas>
+							<generatePackage>com.mdelacruz.ejemplo.wsdl.gq091001</generatePackage>
+						</configuration>
+					</execution>
+					<execution>
+						<id>schema-gq001002-generate</id>
+						<goals>
+							<goal>generate</goal>
+						</goals>
+						<configuration>
+							<schemaLanguage>WSDL</schemaLanguage>
+							<schemas>
+								<schema>
+									<url>http://localhost:8083/mockGQ001002HTTPSoapBinding?wsdl</url>
+								</schema>
+							</schemas>
+							<generatePackage>com.mdelacruz.ejemplo.wsdl.gq001002</generatePackage>
+						</configuration>
 					</execution>
 				</executions>
-				<configuration>
-					<schemaLanguage>WSDL</schemaLanguage>
-					<generatePackage>com.mdelacruz.ejemplo.wsdl</generatePackage>
-					<schemas>
-						<schema>
-							<url>http://localhost:8082/mockGQ091001HTTPSoapBinding?wsdl</url>
-						</schema>
-					</schemas>
-				</configuration>
+
 			</plugin>
 		</plugins>
 	</build>
