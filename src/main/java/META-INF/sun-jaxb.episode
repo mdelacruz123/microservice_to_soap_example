@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<bindings xmlns="http://java.sun.com/xml/ns/jaxb" if-exists="true" version="2.1">
+      
+    <!--
+
+Este archivo ha sido generado por la arquitectura JavaTM para la implantación de la referencia de enlace (JAXB) XML v2.3.0 
+Visite <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
+Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
+Generado el: 2022.09.15 a las 06:09:43 PM COT 
+
+  -->
+      
+    <bindings xmlns:tns="www.luwmessage.issuer.aci.com" if-exists="true" scd="x-schema::tns">
+            
+        <schemaBindings map="false">
+                  
+            <package name="com.mdelacruz.ejemplo.wsdl.gq001002"/>
+                
+        </schemaBindings>
+            
+        <bindings if-exists="true" scd="~tns:luwMessage">
+                  
+            <class ref="com.mdelacruz.ejemplo.wsdl.gq001002.LuwMessage"/>
+                
+        </bindings>
+          
+    </bindings>
+      
+    <bindings xmlns:tns="www.gr001002.issuer.aci.com" if-exists="true" scd="x-schema::tns">
+            
+        <schemaBindings map="false">
+                  
+            <package name="com.mdelacruz.ejemplo.wsdl.gq001002"/>
+                
+        </schemaBindings>
+            
+        <bindings if-exists="true" scd="~tns:GR001002">
+                  
+            <class ref="com.mdelacruz.ejemplo.wsdl.gq001002.GR001002"/>
+                
+        </bindings>
+          
+    </bindings>
+      
+    <bindings xmlns:tns="www.gq001002.request.issuer.aci.com" if-exists="true" scd="x-schema::tns">
+            
+        <schemaBindings map="false">
+                  
+            <package name="com.mdelacruz.ejemplo.wsdl.gq001002"/>
+                
+        </schemaBindings>
+            
+        <bindings if-exists="true" scd="tns:requestMessage">
+                  
+            <class ref="com.mdelacruz.ejemplo.wsdl.gq001002.RequestMessage"/>
+                
+        </bindings>
+          
+    </bindings>
+      
+    <bindings xmlns:tns="www.issuerapplicationheader.issuer.aci.com" if-exists="true" scd="x-schema::tns">
+            
+        <schemaBindings map="false">
+                  
+            <package name="com.mdelacruz.ejemplo.wsdl.gq001002"/>
+                
+        </schemaBindings>
+            
+        <bindings if-exists="true" scd="~tns:issuerApplicationHeader">
+                  
+            <class ref="com.mdelacruz.ejemplo.wsdl.gq001002.IssuerApplicationHeader"/>
+                
+        </bindings>
+          
+    </bindings>
+      
+    <bindings xmlns:tns="www.gq001002.response.issuer.aci.com" if-exists="true" scd="x-schema::tns">
+            
+        <schemaBindings map="false">
+                  
+            <package name="com.mdelacruz.ejemplo.wsdl.gq001002"/>
+                
+        </schemaBindings>
+            
+        <bindings if-exists="true" scd="tns:responseMessage">
+                  
+            <class ref="com.mdelacruz.ejemplo.wsdl.gq001002.ResponseMessage"/>
+                
+        </bindings>
+          
+    </bindings>
+      
+    <bindings xmlns:tns="www.gedminstitution.issuer.aci.com" if-exists="true" scd="x-schema::tns">
+            
+        <schemaBindings map="false">
+                  
+            <package name="com.mdelacruz.ejemplo.wsdl.gq001002"/>
+                
+        </schemaBindings>
+            
+        <bindings if-exists="true" scd="~tns:GeDmInstitution">
+                  
+            <class ref="com.mdelacruz.ejemplo.wsdl.gq001002.GeDmInstitution"/>
+                
+        </bindings>
+          
+    </bindings>
+      
+    <bindings xmlns:tns="www.string4field.issuer.aci.com" if-exists="true" scd="x-schema::tns">
+            
+        <schemaBindings map="false">
+                  
+            <package name="com.mdelacruz.ejemplo.wsdl.gq001002"/>
+                
+        </schemaBindings>
+            
+        <bindings if-exists="true" scd="~tns:String4Field">
+                  
+            <class ref="com.mdelacruz.ejemplo.wsdl.gq001002.String4Field"/>
+                
+        </bindings>
+          
+    </bindings>
+      
+    <bindings xmlns:tns="www.outboundflagtype.issuer.aci.com" if-exists="true" scd="x-schema::tns">
+            
+        <schemaBindings map="false">
+                  
+            <package name="com.mdelacruz.ejemplo.wsdl.gq001002"/>
+                
+        </schemaBindings>
+            
+        <bindings if-exists="true" scd="~tns:outboundFlagType">
+                  
+            <class ref="com.mdelacruz.ejemplo.wsdl.gq001002.OutboundFlagType"/>
+                
+        </bindings>
+          
+    </bindings>
+      
+    <bindings xmlns:tns="www.string70field.issuer.aci.com" if-exists="true" scd="x-schema::tns">
+            
+        <schemaBindings map="false">
+                  
+            <package name="com.mdelacruz.ejemplo.wsdl.gq001002"/>
+                
+        </schemaBindings>
+            
+        <bindings if-exists="true" scd="~tns:String70Field">
+                  
+            <class ref="com.mdelacruz.ejemplo.wsdl.gq001002.String70Field"/>
+                
+        </bindings>
+          
+    </bindings>
+      
+    <bindings xmlns:tns="www.string30field.issuer.aci.com" if-exists="true" scd="x-schema::tns">
+            
+        <schemaBindings map="false">
+                  
+            <package name="com.mdelacruz.ejemplo.wsdl.gq001002"/>
+                
+        </schemaBindings>
+            
+        <bindings if-exists="true" scd="~tns:String30Field">
+                  
+            <class ref="com.mdelacruz.ejemplo.wsdl.gq001002.String30Field"/>
+                
+        </bindings>
+          
+    </bindings>
+      
+    <bindings xmlns:tns="www.string25field.issuer.aci.com" if-exists="true" scd="x-schema::tns">
+            
+        <schemaBindings map="false">
+                  
+            <package name="com.mdelacruz.ejemplo.wsdl.gq001002"/>
+                
+        </schemaBindings>
+            
+        <bindings if-exists="true" scd="~tns:String25Field">
+                  
+            <class ref="com.mdelacruz.ejemplo.wsdl.gq001002.String25Field"/>
+                
+        </bindings>
+          
+    </bindings>
+      
+    <bindings xmlns:tns="www.string10field.issuer.aci.com" if-exists="true" scd="x-schema::tns">
+            
+        <schemaBindings map="false">
+                  
+            <package name="com.mdelacruz.ejemplo.wsdl.gq001002"/>
+                
+        </schemaBindings>
+            
+        <bindings if-exists="true" scd="~tns:String10Field">
+                  
+            <class ref="com.mdelacruz.ejemplo.wsdl.gq001002.String10Field"/>
+                
+        </bindings>
+          
+    </bindings>
+      
+    <bindings xmlns:tns="www.string3field.issuer.aci.com" if-exists="true" scd="x-schema::tns">
+            
+        <schemaBindings map="false">
+                  
+            <package name="com.mdelacruz.ejemplo.wsdl.gq001002"/>
+                
+        </schemaBindings>
+            
+        <bindings if-exists="true" scd="~tns:String3Field">
+                  
+            <class ref="com.mdelacruz.ejemplo.wsdl.gq001002.String3Field"/>
+                
+        </bindings>
+          
+    </bindings>
+      
+    <bindings xmlns:tns="www.datefield.issuer.aci.com" if-exists="true" scd="x-schema::tns">
+            
+        <schemaBindings map="false">
+                  
+            <package name="com.mdelacruz.ejemplo.wsdl.gq001002"/>
+                
+        </schemaBindings>
+            
+        <bindings if-exists="true" scd="~tns:DateField">
+                  
+            <class ref="com.mdelacruz.ejemplo.wsdl.gq001002.DateField"/>
+                
+        </bindings>
+          
+    </bindings>
+      
+    <bindings xmlns:tns="www.string1field.issuer.aci.com" if-exists="true" scd="x-schema::tns">
+            
+        <schemaBindings map="false">
+                  
+            <package name="com.mdelacruz.ejemplo.wsdl.gq001002"/>
+                
+        </schemaBindings>
+            
+        <bindings if-exists="true" scd="~tns:String1Field">
+                  
+            <class ref="com.mdelacruz.ejemplo.wsdl.gq001002.String1Field"/>
+                
+        </bindings>
+          
+    </bindings>
+      
+    <bindings xmlns:tns="www.smallintfield.issuer.aci.com" if-exists="true" scd="x-schema::tns">
+            
+        <schemaBindings map="false">
+                  
+            <package name="com.mdelacruz.ejemplo.wsdl.gq001002"/>
+                
+        </schemaBindings>
+            
+        <bindings if-exists="true" scd="~tns:SmallIntField">
+                  
+            <class ref="com.mdelacruz.ejemplo.wsdl.gq001002.SmallIntField"/>
+                
+        </bindings>
+          
+    </bindings>
+      
+    <bindings xmlns:tns="www.string40field.issuer.aci.com" if-exists="true" scd="x-schema::tns">
+            
+        <schemaBindings map="false">
+                  
+            <package name="com.mdelacruz.ejemplo.wsdl.gq001002"/>
+                
+        </schemaBindings>
+            
+        <bindings if-exists="true" scd="~tns:String40Field">
+                  
+            <class ref="com.mdelacruz.ejemplo.wsdl.gq001002.String40Field"/>
+                
+        </bindings>
+          
+    </bindings>
+      
+    <bindings xmlns:tns="www.timefield.issuer.aci.com" if-exists="true" scd="x-schema::tns">
+            
+        <schemaBindings map="false">
+                  
+            <package name="com.mdelacruz.ejemplo.wsdl.gq001002"/>
+                
+        </schemaBindings>
+            
+        <bindings if-exists="true" scd="~tns:TimeField">
+                  
+            <class ref="com.mdelacruz.ejemplo.wsdl.gq001002.TimeField"/>
+                
+        </bindings>
+          
+    </bindings>
+      
+    <bindings xmlns:tns="www.packedpre17post0field.issuer.aci.com" if-exists="true" scd="x-schema::tns">
+            
+        <schemaBindings map="false">
+                  
+            <package name="com.mdelacruz.ejemplo.wsdl.gq001002"/>
+                
+        </schemaBindings>
+            
+        <bindings if-exists="true" scd="~tns:PackedPre17Post0Field">
+                  
+            <class ref="com.mdelacruz.ejemplo.wsdl.gq001002.PackedPre17Post0Field"/>
+                
+        </bindings>
+          
+    </bindings>
+      
+    <bindings xmlns:tns="www.string20field.issuer.aci.com" if-exists="true" scd="x-schema::tns">
+            
+        <schemaBindings map="false">
+                  
+            <package name="com.mdelacruz.ejemplo.wsdl.gq001002"/>
+                
+        </schemaBindings>
+            
+        <bindings if-exists="true" scd="~tns:String20Field">
+                  
+            <class ref="com.mdelacruz.ejemplo.wsdl.gq001002.String20Field"/>
+                
+        </bindings>
+          
+    </bindings>
+      
+    <bindings xmlns:tns="www.packedpre4post5field.issuer.aci.com" if-exists="true" scd="x-schema::tns">
+            
+        <schemaBindings map="false">
+                  
+            <package name="com.mdelacruz.ejemplo.wsdl.gq001002"/>
+                
+        </schemaBindings>
+            
+        <bindings if-exists="true" scd="~tns:PackedPre4Post5Field">
+                  
+            <class ref="com.mdelacruz.ejemplo.wsdl.gq001002.PackedPre4Post5Field"/>
+                
+        </bindings>
+          
+    </bindings>
+    
+</bindings>

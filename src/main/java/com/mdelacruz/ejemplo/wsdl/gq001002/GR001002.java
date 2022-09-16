@@ -2,18 +2,18 @@
 // Este archivo ha sido generado por la arquitectura JavaTM para la implantación de la referencia de enlace (JAXB) XML v2.3.0 
 // Visite <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
 // Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
-// Generado el: 2022.09.12 a las 05:24:43 PM COT 
+// Generado el: 2022.09.15 a las 06:09:43 PM COT 
 //
 
 
 package com.mdelacruz.ejemplo.wsdl.gq001002;
 
+import java.util.ArrayList;
+import java.util.List;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
-import java.util.ArrayList;
-import java.util.List;
 
 
 /**
@@ -62,7 +62,7 @@ import java.util.List;
 public class GR001002 {
 
     @XmlElement(name = "repeatingGroupOut_1", required = true)
-    protected RepeatingGroupOut1 repeatingGroupOut1;
+    protected GR001002 .RepeatingGroupOut1 repeatingGroupOut1;
 
     /**
      * Obtiene el valor de la propiedad repeatingGroupOut1.
@@ -72,7 +72,7 @@ public class GR001002 {
      *     {@link GR001002 .RepeatingGroupOut1 }
      *     
      */
-    public RepeatingGroupOut1 getRepeatingGroupOut1() {
+    public GR001002 .RepeatingGroupOut1 getRepeatingGroupOut1() {
         return repeatingGroupOut1;
     }
 
@@ -84,7 +84,7 @@ public class GR001002 {
      *     {@link GR001002 .RepeatingGroupOut1 }
      *     
      */
-    public void setRepeatingGroupOut1(RepeatingGroupOut1 value) {
+    public void setRepeatingGroupOut1(GR001002 .RepeatingGroupOut1 value) {
         this.repeatingGroupOut1 = value;
     }
 
@@ -125,7 +125,7 @@ public class GR001002 {
     public static class RepeatingGroupOut1 {
 
         @XmlElement(name = "repeatingGroupInstanceOut_1", namespace = "www.gr001002.issuer.aci.com")
-        protected List<RepeatingGroupInstanceOut1> repeatingGroupInstanceOut1;
+        protected List<GR001002 .RepeatingGroupOut1 .RepeatingGroupInstanceOut1> repeatingGroupInstanceOut1;
 
         /**
          * Gets the value of the repeatingGroupInstanceOut1 property.
@@ -149,9 +149,9 @@ public class GR001002 {
          * 
          * 
          */
-        public List<RepeatingGroupInstanceOut1> getRepeatingGroupInstanceOut1() {
+        public List<GR001002 .RepeatingGroupOut1 .RepeatingGroupInstanceOut1> getRepeatingGroupInstanceOut1() {
             if (repeatingGroupInstanceOut1 == null) {
-                repeatingGroupInstanceOut1 = new ArrayList<RepeatingGroupInstanceOut1>();
+                repeatingGroupInstanceOut1 = new ArrayList<GR001002 .RepeatingGroupOut1 .RepeatingGroupInstanceOut1>();
             }
             return this.repeatingGroupInstanceOut1;
         }

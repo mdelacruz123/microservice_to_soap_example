@@ -20,11 +20,30 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web-services</artifactId>
+			<exclusions>
+				<exclusion>
+					<groupId>org.springframework.boot</groupId>
+					<artifactId>spring-boot-starter-web</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+			<scope>runtime</scope>
+			<optional>true</optional>
 		</dependency>
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>io.projectreactor</groupId>
+			<artifactId>reactor-test</artifactId>
 			<scope>test</scope>
 		</dependency>
 
@@ -40,27 +59,26 @@
 
 		<dependency>
 			<groupId>org.springdoc</groupId>
-			<artifactId>springdoc-openapi-ui</artifactId>
-			<version>1.6.4</version>
-		</dependency>
-
-		<!-- https://mvnrepository.com/artifact/javax.xml.bind/jaxb-api -->
-		<dependency>
-			<groupId>javax.xml.bind</groupId>
-			<artifactId>jaxb-api</artifactId>
-			<version>2.3.1</version>
-		</dependency>
-			<!-- https://mvnrepository.com/artifact/javax.activation/activation -->
-		<dependency>
-			<groupId>javax.activation</groupId>
-			<artifactId>activation</artifactId>
-			<version>1.1</version>
+			<artifactId>springdoc-openapi-webflux-ui</artifactId>
+			<version>1.6.11</version>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.glassfish.jaxb/jaxb-runtime -->
 		<dependency>
 			<groupId>org.glassfish.jaxb</groupId>
 			<artifactId>jaxb-runtime</artifactId>
-			<version>2.3.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<scope>provided</scope>
+			<version>1.18.16</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.glassfish.jaxb/jaxb-runtime -->
+		<dependency>
+			<groupId>wsdl4j</groupId>
+			<artifactId>wsdl4j</artifactId>
 		</dependency>
 
 	</dependencies>
@@ -83,12 +101,13 @@
 						</goals>
 						<configuration>
 							<schemaLanguage>WSDL</schemaLanguage>
+							<generatePackage>com.mdelacruz.ejemplo.wsdl.gq091001</generatePackage>
+							<generateDirectory>${project.basedir}/src/main/java</generateDirectory>
 							<schemas>
 								<schema>
 									<url>http://localhost:8082/mockGQ091001HTTPSoapBinding?wsdl</url>
 								</schema>
 							</schemas>
-							<generatePackage>com.mdelacruz.ejemplo.wsdl.gq091001</generatePackage>
 						</configuration>
 					</execution>
 					<execution>
@@ -98,12 +117,13 @@
 						</goals>
 						<configuration>
 							<schemaLanguage>WSDL</schemaLanguage>
+							<generatePackage>com.mdelacruz.ejemplo.wsdl.gq001002</generatePackage>
+							<generateDirectory>${project.basedir}/src/main/java</generateDirectory>
 							<schemas>
 								<schema>
 									<url>http://localhost:8083/mockGQ001002HTTPSoapBinding?wsdl</url>
 								</schema>
 							</schemas>
-							<generatePackage>com.mdelacruz.ejemplo.wsdl.gq001002</generatePackage>
 						</configuration>
 					</execution>
 				</executions>
