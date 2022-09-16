@@ -2,19 +2,19 @@
 // Este archivo ha sido generado por la arquitectura JavaTM para la implantación de la referencia de enlace (JAXB) XML v2.3.0 
 // Visite <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
 // Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
-// Generado el: 2022.09.12 a las 05:24:42 PM COT 
+// Generado el: 2022.09.15 a las 06:09:42 PM COT 
 //
 
 
 package com.mdelacruz.ejemplo.wsdl.gq091001;
 
+import java.math.BigDecimal;
+import java.util.ArrayList;
+import java.util.List;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
-import java.math.BigDecimal;
-import java.util.ArrayList;
-import java.util.List;
 
 
 /**
@@ -101,9 +101,9 @@ public class LuwMessage {
     @XmlElement(required = true)
     protected BigDecimal errorNumber;
     @XmlElement(required = true)
-    protected PhysicalErrorInformation physicalErrorInformation;
+    protected LuwMessage.PhysicalErrorInformation physicalErrorInformation;
     @XmlElement(required = true)
-    protected FurtherErrorInformationGroup furtherErrorInformationGroup;
+    protected LuwMessage.FurtherErrorInformationGroup furtherErrorInformationGroup;
 
     /**
      * Obtiene el valor de la propiedad errorNumber.
@@ -134,10 +134,10 @@ public class LuwMessage {
      * 
      * @return
      *     possible object is
-     *     {@link PhysicalErrorInformation }
+     *     {@link LuwMessage.PhysicalErrorInformation }
      *     
      */
-    public PhysicalErrorInformation getPhysicalErrorInformation() {
+    public LuwMessage.PhysicalErrorInformation getPhysicalErrorInformation() {
         return physicalErrorInformation;
     }
 
@@ -146,10 +146,10 @@ public class LuwMessage {
      * 
      * @param value
      *     allowed object is
-     *     {@link PhysicalErrorInformation }
+     *     {@link LuwMessage.PhysicalErrorInformation }
      *     
      */
-    public void setPhysicalErrorInformation(PhysicalErrorInformation value) {
+    public void setPhysicalErrorInformation(LuwMessage.PhysicalErrorInformation value) {
         this.physicalErrorInformation = value;
     }
 
@@ -158,10 +158,10 @@ public class LuwMessage {
      * 
      * @return
      *     possible object is
-     *     {@link FurtherErrorInformationGroup }
+     *     {@link LuwMessage.FurtherErrorInformationGroup }
      *     
      */
-    public FurtherErrorInformationGroup getFurtherErrorInformationGroup() {
+    public LuwMessage.FurtherErrorInformationGroup getFurtherErrorInformationGroup() {
         return furtherErrorInformationGroup;
     }
 
@@ -170,10 +170,10 @@ public class LuwMessage {
      * 
      * @param value
      *     allowed object is
-     *     {@link FurtherErrorInformationGroup }
+     *     {@link LuwMessage.FurtherErrorInformationGroup }
      *     
      */
-    public void setFurtherErrorInformationGroup(FurtherErrorInformationGroup value) {
+    public void setFurtherErrorInformationGroup(LuwMessage.FurtherErrorInformationGroup value) {
         this.furtherErrorInformationGroup = value;
     }
 

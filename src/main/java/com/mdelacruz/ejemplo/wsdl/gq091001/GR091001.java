@@ -2,18 +2,18 @@
 // Este archivo ha sido generado por la arquitectura JavaTM para la implantación de la referencia de enlace (JAXB) XML v2.3.0 
 // Visite <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
 // Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
-// Generado el: 2022.09.12 a las 05:24:42 PM COT 
+// Generado el: 2022.09.15 a las 06:09:42 PM COT 
 //
 
 
 package com.mdelacruz.ejemplo.wsdl.gq091001;
 
+import java.util.ArrayList;
+import java.util.List;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
-import java.util.ArrayList;
-import java.util.List;
 
 
 /**
@@ -110,9 +110,9 @@ public class GR091001 {
     @XmlElement(name = "GeDmSignOnProfile", required = true)
     protected GeDmSignOnProfile geDmSignOnProfile;
     @XmlElement(name = "repeatingGroupOut_1", required = true)
-    protected RepeatingGroupOut1 repeatingGroupOut1;
+    protected GR091001 .RepeatingGroupOut1 repeatingGroupOut1;
     @XmlElement(name = "repeatingGroupOut_2", required = true)
-    protected RepeatingGroupOut2 repeatingGroupOut2;
+    protected GR091001 .RepeatingGroupOut2 repeatingGroupOut2;
 
     /**
      * Obtiene el valor de la propiedad geDmSignOnProfile.
@@ -146,7 +146,7 @@ public class GR091001 {
      *     {@link GR091001 .RepeatingGroupOut1 }
      *     
      */
-    public RepeatingGroupOut1 getRepeatingGroupOut1() {
+    public GR091001 .RepeatingGroupOut1 getRepeatingGroupOut1() {
         return repeatingGroupOut1;
     }
 
@@ -158,7 +158,7 @@ public class GR091001 {
      *     {@link GR091001 .RepeatingGroupOut1 }
      *     
      */
-    public void setRepeatingGroupOut1(RepeatingGroupOut1 value) {
+    public void setRepeatingGroupOut1(GR091001 .RepeatingGroupOut1 value) {
         this.repeatingGroupOut1 = value;
     }
 
@@ -170,7 +170,7 @@ public class GR091001 {
      *     {@link GR091001 .RepeatingGroupOut2 }
      *     
      */
-    public RepeatingGroupOut2 getRepeatingGroupOut2() {
+    public GR091001 .RepeatingGroupOut2 getRepeatingGroupOut2() {
         return repeatingGroupOut2;
     }
 
@@ -182,7 +182,7 @@ public class GR091001 {
      *     {@link GR091001 .RepeatingGroupOut2 }
      *     
      */
-    public void setRepeatingGroupOut2(RepeatingGroupOut2 value) {
+    public void setRepeatingGroupOut2(GR091001 .RepeatingGroupOut2 value) {
         this.repeatingGroupOut2 = value;
     }
 
@@ -244,7 +244,7 @@ public class GR091001 {
     public static class RepeatingGroupOut1 {
 
         @XmlElement(name = "repeatingGroupInstanceOut_1", namespace = "www.gr091001.issuer.aci.com")
-        protected List<RepeatingGroupInstanceOut1> repeatingGroupInstanceOut1;
+        protected List<GR091001 .RepeatingGroupOut1 .RepeatingGroupInstanceOut1> repeatingGroupInstanceOut1;
 
         /**
          * Gets the value of the repeatingGroupInstanceOut1 property.
@@ -268,9 +268,9 @@ public class GR091001 {
          * 
          * 
          */
-        public List<RepeatingGroupInstanceOut1> getRepeatingGroupInstanceOut1() {
+        public List<GR091001 .RepeatingGroupOut1 .RepeatingGroupInstanceOut1> getRepeatingGroupInstanceOut1() {
             if (repeatingGroupInstanceOut1 == null) {
-                repeatingGroupInstanceOut1 = new ArrayList<RepeatingGroupInstanceOut1>();
+                repeatingGroupInstanceOut1 = new ArrayList<GR091001 .RepeatingGroupOut1 .RepeatingGroupInstanceOut1>();
             }
             return this.repeatingGroupInstanceOut1;
         }
@@ -326,7 +326,7 @@ public class GR091001 {
             @XmlElement(name = "GeDmInstitutionGR091001Subset0001", namespace = "www.gr091001.issuer.aci.com", required = true)
             protected GeDmInstitutionGR091001Subset0001 geDmInstitutionGR091001Subset0001;
             @XmlElement(name = "repeatingGroupOut_1_1", namespace = "www.gr091001.issuer.aci.com", required = true)
-            protected RepeatingGroupOut11 repeatingGroupOut11;
+            protected GR091001 .RepeatingGroupOut1 .RepeatingGroupInstanceOut1 .RepeatingGroupOut11 repeatingGroupOut11;
 
             /**
              * Obtiene el valor de la propiedad geDmInstitutionGR091001Subset0001.
@@ -360,7 +360,7 @@ public class GR091001 {
              *     {@link GR091001 .RepeatingGroupOut1 .RepeatingGroupInstanceOut1 .RepeatingGroupOut11 }
              *     
              */
-            public RepeatingGroupOut11 getRepeatingGroupOut11() {
+            public GR091001 .RepeatingGroupOut1 .RepeatingGroupInstanceOut1 .RepeatingGroupOut11 getRepeatingGroupOut11() {
                 return repeatingGroupOut11;
             }
 
@@ -372,7 +372,7 @@ public class GR091001 {
              *     {@link GR091001 .RepeatingGroupOut1 .RepeatingGroupInstanceOut1 .RepeatingGroupOut11 }
              *     
              */
-            public void setRepeatingGroupOut11(RepeatingGroupOut11 value) {
+            public void setRepeatingGroupOut11(GR091001 .RepeatingGroupOut1 .RepeatingGroupInstanceOut1 .RepeatingGroupOut11 value) {
                 this.repeatingGroupOut11 = value;
             }
 
@@ -413,7 +413,7 @@ public class GR091001 {
             public static class RepeatingGroupOut11 {
 
                 @XmlElement(name = "repeatingGroupInstanceOut_1_1", namespace = "www.gr091001.issuer.aci.com")
-                protected List<RepeatingGroupInstanceOut11> repeatingGroupInstanceOut11;
+                protected List<GR091001 .RepeatingGroupOut1 .RepeatingGroupInstanceOut1 .RepeatingGroupOut11 .RepeatingGroupInstanceOut11> repeatingGroupInstanceOut11;
 
                 /**
                  * Gets the value of the repeatingGroupInstanceOut11 property.
@@ -437,9 +437,9 @@ public class GR091001 {
                  * 
                  * 
                  */
-                public List<RepeatingGroupInstanceOut11> getRepeatingGroupInstanceOut11() {
+                public List<GR091001 .RepeatingGroupOut1 .RepeatingGroupInstanceOut1 .RepeatingGroupOut11 .RepeatingGroupInstanceOut11> getRepeatingGroupInstanceOut11() {
                     if (repeatingGroupInstanceOut11 == null) {
-                        repeatingGroupInstanceOut11 = new ArrayList<RepeatingGroupInstanceOut11>();
+                        repeatingGroupInstanceOut11 = new ArrayList<GR091001 .RepeatingGroupOut1 .RepeatingGroupInstanceOut1 .RepeatingGroupOut11 .RepeatingGroupInstanceOut11>();
                     }
                     return this.repeatingGroupInstanceOut11;
                 }
@@ -543,7 +543,7 @@ public class GR091001 {
     public static class RepeatingGroupOut2 {
 
         @XmlElement(name = "repeatingGroupInstanceOut_2", namespace = "www.gr091001.issuer.aci.com")
-        protected List<RepeatingGroupInstanceOut2> repeatingGroupInstanceOut2;
+        protected List<GR091001 .RepeatingGroupOut2 .RepeatingGroupInstanceOut2> repeatingGroupInstanceOut2;
 
         /**
          * Gets the value of the repeatingGroupInstanceOut2 property.
@@ -567,9 +567,9 @@ public class GR091001 {
          * 
          * 
          */
-        public List<RepeatingGroupInstanceOut2> getRepeatingGroupInstanceOut2() {
+        public List<GR091001 .RepeatingGroupOut2 .RepeatingGroupInstanceOut2> getRepeatingGroupInstanceOut2() {
             if (repeatingGroupInstanceOut2 == null) {
-                repeatingGroupInstanceOut2 = new ArrayList<RepeatingGroupInstanceOut2>();
+                repeatingGroupInstanceOut2 = new ArrayList<GR091001 .RepeatingGroupOut2 .RepeatingGroupInstanceOut2>();
             }
             return this.repeatingGroupInstanceOut2;
         }

@@ -5,12 +5,10 @@ import com.mdelacruz.ejemplo.dto.GQ091001Request;
 import com.mdelacruz.ejemplo.dto.GR001002Response;
 import com.mdelacruz.ejemplo.dto.GR091001Response;
 import com.mdelacruz.ejemplo.wsdl.gq091001.*;
-import com.mdelacruz.ejemplo.wsdl.gq001002.*;
-import com.mdelacruz.ejemplo.wsdl.gq091001.IssuerApplicationHeader;
-import com.mdelacruz.ejemplo.wsdl.gq091001.RequestMessage;
-import com.mdelacruz.ejemplo.wsdl.gq091001.ResponseMessage;
-import com.mdelacruz.ejemplo.wsdl.gq091001.String4Field;
+import org.springframework.stereotype.Service;
+import reactor.core.publisher.Mono;
 
+@Service
 public class Util {
     public static RequestMessage createGQ091001SOAPRequest(GQ091001Request request){
 
@@ -52,39 +50,39 @@ public class Util {
         return soapRequest;
     }
 
-    public static GR091001Response createGR091001Response(ResponseMessage response){
+    public static Mono<GR091001Response> createGR091001Response(Mono<ResponseMessage> response){
+        return response
+                .map(r->{
+                    GR091001Response gr091001Response = new GR091001Response();
 
-        GR091001Response gr091001Response = new GR091001Response();
-
-        gr091001Response.setSessionType(response.getGR091001().getGeDmSignOnProfile().getSessionType().getValue());
-        gr091001Response.setSignOnDate(response.getGR091001().getGeDmSignOnProfile().getSignOnDate().getValue().toString());
-        gr091001Response.setClientNetworkAddress(response.getGR091001().getGeDmSignOnProfile().getClientNetworkAddress().getValue());
-        gr091001Response.setSignOnId(response.getGR091001().getGeDmSignOnProfile().getSignOnId().getValue());
-
-        return gr091001Response;
+                    gr091001Response.setSessionType(r.getGR091001().getGeDmSignOnProfile().getSessionType().getValue());
+                    gr091001Response.setSignOnDate(r.getGR091001().getGeDmSignOnProfile().getSignOnDate().getValue().toString());
+                    gr091001Response.setClientNetworkAddress(r.getGR091001().getGeDmSignOnProfile().getClientNetworkAddress().getValue());
+                    gr091001Response.setSignOnId(r.getGR091001().getGeDmSignOnProfile().getSignOnId().getValue());
+                    return gr091001Response;
+                });
     }
 
     public static com.mdelacruz.ejemplo.wsdl.gq001002.RequestMessage createGQ001002SOAPRequest(GQ001002Request request) {
-        com.mdelacruz.ejemplo.wsdl.gq001002.RequestMessage soapRequest = new com.mdelacruz.ejemplo.wsdl.gq001002.RequestMessage();
 
+        com.mdelacruz.ejemplo.wsdl.gq001002.RequestMessage soapRequest = new com.mdelacruz.ejemplo.wsdl.gq001002.RequestMessage();
         com.mdelacruz.ejemplo.wsdl.gq001002.IssuerApplicationHeader issuerApplicationHeader = new com.mdelacruz.ejemplo.wsdl.gq001002.IssuerApplicationHeader();
         issuerApplicationHeader.setSessionId(request.getSessionId());
         issuerApplicationHeader.setContextFunction(request.getContextFunction());
-
         soapRequest.setIssuerApplicationHeader(issuerApplicationHeader);
-
         return soapRequest;
     }
 
-    public static GR001002Response createGR001002Response(com.mdelacruz.ejemplo.wsdl.gq001002.ResponseMessage response){
-        GR001002Response gr001002Response = new GR001002Response();
+    public static Mono<GR001002Response> createGR001002Response(Mono<com.mdelacruz.ejemplo.wsdl.gq001002.ResponseMessage> response){
+        return response.map(res->{
+            GR001002Response gr001002Response = new GR001002Response();
 
-        gr001002Response.setIdValue(response.getGR001002().getRepeatingGroupOut1().getRepeatingGroupInstanceOut1()
-                .get(0).getGeDmInstitution().getId().getValue());
-        gr001002Response.setNameValue(response.getGR001002().getRepeatingGroupOut1().getRepeatingGroupInstanceOut1()
-                .get(0).getGeDmInstitution().getName().getValue());
-
-        return gr001002Response;
+            gr001002Response.setIdValue(res.getGR001002().getRepeatingGroupOut1().getRepeatingGroupInstanceOut1()
+                    .get(0).getGeDmInstitution().getId().getValue());
+            gr001002Response.setNameValue(res.getGR001002().getRepeatingGroupOut1().getRepeatingGroupInstanceOut1()
+                    .get(0).getGeDmInstitution().getName().getValue());
+            return gr001002Response;
+        });
     }
 
 }
